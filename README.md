@@ -15,16 +15,17 @@ This project is built using NestJS with TypeScript, following a clean modular ar
   - Testing: Jest for unit and e2e tests
 
 ## Code Structure
-  src/
-  ├─ auth/                 # Authentication module (controllers, services)
-  ├─ common/               # Shared utilities, guards, decorators, filters
-  ├─ dto/                  # Data Transfer Objects for input validation
-  ├─ prisma/               # PrismaService & database setup
-  ├─ transaction/          # Transaction import and history module
-  ├─ types/                # TypeScript type definitions and interfaces
-  ├─ main.ts               # App entry point
-  └─ app.module.ts         # Root module, imports other modules 
-
+```plaintext
+src/
+├── auth/               # Authentication module (controllers, services)
+├── common/             # Shared utilities, guards, decorators, filters
+├── dto/                # Data Transfer Objects for input validation
+├── prisma/             # PrismaService & database setup
+├── transaction/        # Transaction import and history module
+├── types/              # TypeScript type definitions and interfaces
+├── main.ts             # App entry point
+└── app.module.ts       # Root module, imports other modules
+```
 ## System Flow
 1. Client Registration & Login
   - Registration flow:
