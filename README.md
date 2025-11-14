@@ -80,9 +80,27 @@ src/
 👉 bank_reconciliation.drawio
 
 ## Project setup
+1. Install dependencies
 ```bash
 $ npm install
 ```
+2. Modify DATABASE_URL in .env file into your database name
+```bash
+$ DATABASE_URL="postgresql://username:password@localhost:5432/bank_reconciliation?schema=public"
+```
+3. Setup PostgreSQL database
+  create empty database name bank_reconciliation
+4. Run Prisma migrations
+``` bash
+$ npx prisma generate
+```
+``` bash
+$ npx prisma migrate dev --name init
+```
+``` bash
+$ npx prisma studio
+```
+
 ## BullMQ & Redis setup
 1. Install Docker
 2. Run Redis in Docker
