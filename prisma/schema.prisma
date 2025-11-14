@@ -1,0 +1,53 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Client {
+  id               String                     @id @default(uuid())
+  fullName         String
+  email            String                     @unique
+  phone            String                     @unique
+  password         String
+  idNumber         String                     @unique
+  organizationName String?
+  apiKey           String                     @unique
+  createdAt        DateTime                   @default(now())
+  updatedAt        DateTime                   @updatedAt
+  transactions     Transaction[]
+  importHistories  TransactionImportHistory[]
+}
+
+model Transaction {
+  id        String          @id @default(uuid())
+  client    Client          @relation(fields: [clientId], references: [id])
+  clientId  String
+  date      DateTime
+  content   String
+  amount    Decimal
+  type      String
+  createdAt DateTime        @default(now())
+  updatedAt DateTime        @updatedAt
+}
+
+model TransactionImportHistory {
+  id             String       @id @default(uuid())
+  client         Client       @relation(fields: [clientId], references: [id])
+  clientId       String
+  fileName       String
+  totalRecords   Int
+  successRecords Int
+  failedRecords  Int
+  status         ImportStatus
+  importedAt     DateTime     @default(now())
+}
+
+enum ImportStatus {
+  PENDING
+  SUCCESS
+  FAILED
+}

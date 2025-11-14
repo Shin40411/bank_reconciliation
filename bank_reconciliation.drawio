@@ -1,0 +1,166 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="29.0.2">
+  <diagram name="Page-1" id="6CGrqNYUuBSXl--dYVtu">
+    <mxGraphModel dx="1426" dy="751" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="NkNuM4xTqsa-rarjW67W-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="NkNuM4xTqsa-rarjW67W-1" target="NkNuM4xTqsa-rarjW67W-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NkNuM4xTqsa-rarjW67W-10" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;Check duplicate (email/phone)&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="NkNuM4xTqsa-rarjW67W-9" vertex="1" connectable="0">
+          <mxGeometry x="-0.2457" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NkNuM4xTqsa-rarjW67W-11" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="NkNuM4xTqsa-rarjW67W-9" vertex="1" connectable="0">
+          <mxGeometry x="0.7638" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NkNuM4xTqsa-rarjW67W-1" value="Client Registration" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="70" y="40" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="NkNuM4xTqsa-rarjW67W-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="NkNuM4xTqsa-rarjW67W-4" target="NkNuM4xTqsa-rarjW67W-18" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410.02857142857147" y="169.97" as="sourcePoint" />
+            <mxPoint x="170" y="149.97" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="440" y="170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NkNuM4xTqsa-rarjW67W-15" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="NkNuM4xTqsa-rarjW67W-14" vertex="1" connectable="0">
+          <mxGeometry x="-0.831" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NkNuM4xTqsa-rarjW67W-23" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 8px; text-wrap-mode: wrap; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Hash password (bcrypt)&lt;/span&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];" parent="NkNuM4xTqsa-rarjW67W-14" vertex="1" connectable="0">
+          <mxGeometry x="0.0607" y="1" relative="1" as="geometry">
+            <mxPoint x="-37" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NkNuM4xTqsa-rarjW67W-4" value="Duplicate found → Throw error" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="380" y="30" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NkNuM4xTqsa-rarjW67W-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="NkNuM4xTqsa-rarjW67W-18" target="NkNuM4xTqsa-rarjW67W-20" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NkNuM4xTqsa-rarjW67W-18" value="Save client to DB" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="70" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NkNuM4xTqsa-rarjW67W-20" value="Return API Key &amp;amp; Client Info" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="70" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NkNuM4xTqsa-rarjW67W-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="NkNuM4xTqsa-rarjW67W-28" target="NkNuM4xTqsa-rarjW67W-34" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NkNuM4xTqsa-rarjW67W-26" value="&lt;span style=&quot;text-align: left; text-wrap-mode: wrap;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;Validate credentials&lt;/font&gt;&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="NkNuM4xTqsa-rarjW67W-25" vertex="1" connectable="0">
+          <mxGeometry x="-0.2457" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NkNuM4xTqsa-rarjW67W-27" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="NkNuM4xTqsa-rarjW67W-25" vertex="1" connectable="0">
+          <mxGeometry x="0.7638" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NkNuM4xTqsa-rarjW67W-28" value="&lt;span style=&quot;text-align: left;&quot;&gt;Client Login&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="640" y="40" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="NkNuM4xTqsa-rarjW67W-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="NkNuM4xTqsa-rarjW67W-34" target="NkNuM4xTqsa-rarjW67W-36" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="680" y="267.5" as="sourcePoint" />
+            <mxPoint x="570" y="372.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NkNuM4xTqsa-rarjW67W-31" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="NkNuM4xTqsa-rarjW67W-30" vertex="1" connectable="0">
+          <mxGeometry x="-0.831" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NkNuM4xTqsa-rarjW67W-32" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 8px; text-wrap-mode: wrap;&quot;&gt;Generate JWT Access Token&lt;/span&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];" parent="NkNuM4xTqsa-rarjW67W-30" vertex="1" connectable="0">
+          <mxGeometry x="0.0607" y="1" relative="1" as="geometry">
+            <mxPoint x="-41" y="-16" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NkNuM4xTqsa-rarjW67W-34" value="Invalid → Error&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="640" y="200" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NkNuM4xTqsa-rarjW67W-36" value="Return token to client" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="410" y="290" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NkNuM4xTqsa-rarjW67W-49" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="NkNuM4xTqsa-rarjW67W-41" target="NkNuM4xTqsa-rarjW67W-46" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NkNuM4xTqsa-rarjW67W-41" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;Get Import History (Paginated)&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="640" y="415" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NkNuM4xTqsa-rarjW67W-48" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" target="NkNuM4xTqsa-rarjW67W-47" edge="1" source="NkNuM4xTqsa-rarjW67W-46">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="700" y="615" as="sourcePoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NkNuM4xTqsa-rarjW67W-46" value="Query table TransactionImportHistory&lt;br&gt;(show status of transaction import)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="620" y="520" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NkNuM4xTqsa-rarjW67W-47" value="Return list + pagination metadata" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="640" y="665" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NkNuM4xTqsa-rarjW67W-57" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="NkNuM4xTqsa-rarjW67W-60" target="NkNuM4xTqsa-rarjW67W-65" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NkNuM4xTqsa-rarjW67W-58" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); text-wrap-mode: wrap;&quot;&gt;API receives files&lt;/span&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=8;spacingRight=0;" parent="NkNuM4xTqsa-rarjW67W-57" vertex="1" connectable="0">
+          <mxGeometry x="-0.2457" relative="1" as="geometry">
+            <mxPoint x="20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NkNuM4xTqsa-rarjW67W-60" value="Import multiple transaction files from customers" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="70" y="380" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NkNuM4xTqsa-rarjW67W-68" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="NkNuM4xTqsa-rarjW67W-65" target="NkNuM4xTqsa-rarjW67W-67" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2oJbdGJMvqa2x7hfflyg-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="NkNuM4xTqsa-rarjW67W-65" target="2oJbdGJMvqa2x7hfflyg-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NkNuM4xTqsa-rarjW67W-65" value="Create Import History&lt;br&gt;(PENDING status)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="360" y="490" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NkNuM4xTqsa-rarjW67W-70" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="NkNuM4xTqsa-rarjW67W-67" target="NkNuM4xTqsa-rarjW67W-69" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NkNuM4xTqsa-rarjW67W-67" value="Push job to BullMQ Queue (Redis)" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="360" y="620" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NkNuM4xTqsa-rarjW67W-74" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="NkNuM4xTqsa-rarjW67W-69" target="NkNuM4xTqsa-rarjW67W-73" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NkNuM4xTqsa-rarjW67W-75" value="Parse file (CSV/XLSX)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=8;" parent="NkNuM4xTqsa-rarjW67W-74" vertex="1" connectable="0">
+          <mxGeometry x="-0.5641" y="-1" relative="1" as="geometry">
+            <mxPoint y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NkNuM4xTqsa-rarjW67W-76" value="Validate each record" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=8;" parent="NkNuM4xTqsa-rarjW67W-74" vertex="1" connectable="0">
+          <mxGeometry x="-0.1136" y="1" relative="1" as="geometry">
+            <mxPoint x="-1" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NkNuM4xTqsa-rarjW67W-77" value="Insert batch → Transaction table" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=8;" parent="NkNuM4xTqsa-rarjW67W-74" vertex="1" connectable="0">
+          <mxGeometry x="0.2451" relative="1" as="geometry">
+            <mxPoint x="10" y="22" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NkNuM4xTqsa-rarjW67W-69" value="Worker (transaction-import.processor)" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="80" y="620" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NkNuM4xTqsa-rarjW67W-73" value="&lt;span style=&quot;text-wrap-mode: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;&lt;font&gt;Update ImportHistory &lt;br&gt;(SUCCESS/FAILED)&lt;/font&gt;&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="80" y="810" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2oJbdGJMvqa2x7hfflyg-1" value="API response for client - QUEUE status" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="490" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
