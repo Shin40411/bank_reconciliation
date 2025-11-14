@@ -203,7 +203,7 @@ $ npm run test:cov
     -F "files=@/path/to/file.csv"
 ````
 
-  ### ### API Key Authorization
+  ### API Key Authorization
 ````bash
   curl -X POST http://localhost:3000/transaction/import 
     -H "x-api-key: <API_KEY>" 
